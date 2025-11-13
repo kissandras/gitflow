@@ -5,4 +5,4 @@ This repository is using git-flow with the following branches:
 - develop: Development
 
 Added feature1
- - This is a bugfix
+ - This is a bugfix- hotfix1

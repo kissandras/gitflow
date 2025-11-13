@@ -8,3 +8,5 @@ Added feature1
  - This is a bugfix
  - hotfix1
 - v 0.1.0
+
+Added feature2

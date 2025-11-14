@@ -1,4 +1,4 @@
-name: Branch Protection
+name: Master Branch Protection
 
 on:
   pull_request:

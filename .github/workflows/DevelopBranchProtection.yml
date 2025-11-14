@@ -1,4 +1,4 @@
-name: Branch Protection
+name: Develop Branch Protection
 
 on:
   pull_request:

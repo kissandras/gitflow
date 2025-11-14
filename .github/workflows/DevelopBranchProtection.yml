@@ -1,0 +1,22 @@
+name: Develop Branch Protection
+
+on:
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  check-source-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check source branch
+        run: |
+          source_branch="${{ github.head_ref }}"
+          echo "Source branch: $source_branch"
+          
+          if [[ "$source_branch" =~ ^(feature|release|hotfix/.*)$ ]]; then
+            echo "✅ Merge from $source_branch is allowed"
+          else
+            echo "❌ Merges to develop are only allowed from 'feature', 'release', or 'hotfix/*' branches"
+            echo "Current source branch: $source_branch"
+            exit 1
+          fi

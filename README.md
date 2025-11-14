@@ -10,3 +10,5 @@ Added feature1
 - v 0.1.0
 
 Added feature2
+
+Added feature3
